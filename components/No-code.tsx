@@ -15,7 +15,7 @@ export default function NoCode() {
           "linear-gradient(to bottom, hsla(0,0%,100%,.05), transparent 20%), linear-gradient(180deg, rgba(97, 106, 115, 0) 0, rgba(97, 106, 115, .05) 40%, rgba(97, 106, 115, .05) 80%, rgba(97, 106, 115, 0) 100%)",
       }}
     >
-      <h1
+      {/* <h1
         className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 
                      mt-8 sm:mt-10 md:mt-12 lg:mt-15
                      leading-tight sm:leading-tight md:leading-[1.1] lg:leading-[1.1] 
@@ -23,7 +23,7 @@ export default function NoCode() {
                      max-w-full px-4"
       >
         Multi-Deployment Methods
-      </h1>
+      </h1> */}
 
       <MotionDiv
         initial={{
@@ -68,7 +68,7 @@ export default function NoCode() {
                      font-[538] tracking-[-.0325em] text-balance text-left
                      max-w-full mt-16 sm:mt-24 md:mt-32 lg:mt-40 px-4 sm:px-0"
         >
-          No-Code: drag-and-drop logic and simple prompts
+          Drag-and-drop logic and simple prompts
         </MotionH2>
 
         <MotionP
@@ -99,7 +99,6 @@ export default function NoCode() {
         </MotionP>
       </MotionDiv>
 
-    
       <MotionDiv
         initial={{
           y: 60,

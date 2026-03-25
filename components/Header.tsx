@@ -12,48 +12,34 @@ export default function Header() {
       });
     }
   };
-  const scrollToTop = ()=>{
+  const scrollToTop = () => {
     window.scroll({
-      top : 0,
-      behavior : "smooth"
-    })
-  }
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
-    <div className="text-white flex items-center md:justify-evenly justify-between z-50 w-full sticky left-0 top-0 lg:gap-40 p-4 border-b border-[#1c1d1d] bg-[#0a0a0a]">
-      <h1 onClick={scrollToTop} className="cursor-pointer text-[#e6e6e6] flex text-lg items-center gap-2 md:text-2xl font-semibold">
-<div className="flex justify-center items-center">
-  <Image
-    src={logo}
-    alt="logo"
-    width={100}            
-    height={75}             
-    className="object-contain" 
-    priority
-  />
-</div>
-      </h1>
-      <div className="flex gap-5">
-        <motion.span
-          className="inline-block cursor-pointer"
-          whileHover={{
-            scale: 1.01,
-            y: -2,
-          }}
-          whileTap={{
-            scale: 0.9,
-          }}
-        >
-          <button
-            onClick={scrollToSection}
-            className="bg-[#e6e6e6] shadow-lg rounded-[8px]  text-[#08090a] roundedd  h-[32px] px-3 text-[11px] sm:text-xs md:text-sm hover:bg-white  cursor-pointer    "
-            style={{
-              border: "1px solid #e6e6e6",
-            }}
-          >
-            Join The WaitList
-          </button>
-        </motion.span>
+    <div className="flex items-center justify-center md:justify-evenly z-50 w-full sticky left-0 top-0  min-[380px]:max-[740px]:gap-15  lg:gap-120  p-4 border-b border-[#1c1d1d] bg-[#0a0a0a]">
+      <div className="min-w-[170px] relative top-[1.3px]">
+        <Image
+          src={logo}
+          alt="logo"
+          width={150}
+          height={75}
+          className="object-contain cursor-pointer"
+          onClick={scrollToTop}
+          priority
+        />
       </div>
+      <button
+        onClick={scrollToSection}
+        className="bg-white shadow-lg rounded-[8px]  text-[#08090a] roundedd  h-[32px] px-3 text-[11px] sm:text-xs md:text-sm hover:bg-white  cursor-pointer relative hover:bottom-[2px]   "
+        style={{
+          border: "1px solid #e6e6e6",
+        }}
+      >
+        Join The WaitList
+      </button>
     </div>
   );
 }

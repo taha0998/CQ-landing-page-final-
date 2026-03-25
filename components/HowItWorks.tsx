@@ -33,8 +33,13 @@ export default function HowItWorks() {
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
     >
+      <h1
+        className="text-4xl sm:text-4xl md:text-5xl lg:text-[53px] xl:text-[77px]  2xl:text-[81px]
+        font-[555] tracking-[-.0325em] text-balance text-center mb-40"
+      >
+        This isn’t software. It’s a collective brain
+      </h1>
       <div className="max-w-[1200px] mx-auto">
-
         {/* Top label */}
         <MotionDiv
           className="flex items-center gap-3 mb-6 text-sm tracking-widest text-[#A1A1AA]"
@@ -104,7 +109,7 @@ const itemVariants = {
     y: 0,
     transition: {
       duration: 0.6,
-      ease: easeInOut, 
+      ease: easeInOut,
     },
   },
 };

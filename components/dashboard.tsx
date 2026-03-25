@@ -33,7 +33,7 @@ const Dashboard = () => {
       { label: "Reports", icon: IoFlag, color: "#4EA7FC" },
       { label: "Leaderboard", icon: PiRankingLight, color: "#68CC58" },
     ],
-    []
+    [],
   );
 
   const cardContent = useMemo(
@@ -44,7 +44,7 @@ const Dashboard = () => {
         title: "Contribution Rewards",
         value: "$8340",
       },
-      { title: "Uniqueness Score", value: "1.5"},
+      { title: "Uniqueness Score", value: "1.5" },
       { title: "Validated Predictions", value: "7", change: "" },
       {
         title: "Sharp Ratio",
@@ -53,7 +53,7 @@ const Dashboard = () => {
       { title: "Predictions Weighted", value: "9" },
       { title: "Accuracy", value: "55%" },
     ],
-    []
+    [],
   );
   return (
     <div className="relative  dashboard-container   ">
@@ -68,7 +68,7 @@ const Dashboard = () => {
             <div className="flex   justify-between b w-full">
               <div className="flex items-center">
                 <h1 className="text-[#e6e6e6] flex text-md items-center gap-2 md:text-xl font-semibold">
-                  <Image src={dash} alt="logo" width={900} priority />
+                  {/* <Image src={dash} alt="logo" width={900} priority /> */}
                 </h1>
               </div>
               <button
@@ -413,8 +413,7 @@ const Dashboard = () => {
                         card.title
                       )}
                     </h2>
-                    
-            
+
                     <div className="flex justify-between items-center">
                       <span
                         className={`${

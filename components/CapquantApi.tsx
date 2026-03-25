@@ -9,7 +9,7 @@ export default function ApiSection() {
     <div
       className="text-[#f7f8f8] flex flex-col 
                px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 
-               py-8 sm:py-16 md:py-24 lg:py-32 xl:py-40
+               py-8 sm:py-16 md:py-24 lg:py-32 xl:py-30
                w-full 
                mt-10 sm:mt-20 md:mt-32 lg:mt-40 
                bg-gradient-to-b from-[#141516] to-[#08090A]"
@@ -34,7 +34,7 @@ export default function ApiSection() {
           duration: 0.8,
           ease: [0.25, 0.46, 0.45, 0.94],
         }}
-        className="flex self-center items-start w-full max-w-6xl flex-col"
+        className="flex self-center justify-center items-center w-full max-w-6xl flex-col"
       >
         <MotionH2
           initial={{
@@ -53,14 +53,13 @@ export default function ApiSection() {
             duration: 0.8,
             ease: [0.25, 0.46, 0.45, 0.94],
           }}
-          className="text-4xl   sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 
+          className="text-4xl   sm:text-3xl md:text-4xl lg:text-[81px] xl:text-[81px]
                    leading-tight sm:leading-tight md:leading-[1.1] lg:leading-[1.1] 
-                   font-[538] tracking-[-.0325em] text-balance text-left  w-full sm:text-left
-                   max-w-full  px-4 sm:px-0"
+                   font-[538] tracking-[-.0325em] text-balance text-center  sm:text-left
+                   px-4 sm:px-0 "
         >
-          Pro-Code: the CapQuant API
+          The CapQuant API
         </MotionH2>
-
         <MotionP
           initial={{
             y: 30,
@@ -78,20 +77,19 @@ export default function ApiSection() {
             duration: 0.8,
             ease: [0.25, 0.46, 0.45, 0.94],
           }}
-       className="font-[510] tracking-[-0.011em] text-[#8a8f98] text-center  text-xl mt-5"
+          className="font-[510] tracking-[-0.011em] text-[#8a8f98] text-center text-[16px]  lg:text-[24px] mt-5 max-w-full"
         >
           <span className="">
             Full access to our <strong>SDK</strong> and advanced coding
             environment, with complete <strong>API</strong> control
           </span>
-          <span className="md:text-nowrap">
-            {" "}
+          <span>
             Built for quant researchers and data scientists who demand
             institutional-grade precision.
           </span>
         </MotionP>
       </MotionDiv>
-          <CodeSlider/>
+      <CodeSlider />
       <div className="sm:flex hidden flex-col lg:flex-row w-full gap-5 items-center justify-center lg:mt-10">
         <PostCode />
         <GetCode />

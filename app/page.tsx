@@ -5,16 +5,15 @@ const Header = dynamic(() => import("@/components/Header"), {
   ssr: true,
 });
 
-const OkSection = dynamic(
-  () => import("@/components/ok"),
-  { ssr: true, loading: () => <div className="h-96 animate-pulse ..." /> }
-);
+const OkSection = dynamic(() => import("@/components/ok"), {
+  ssr: true,
+  loading: () => <div className="h-96 animate-pulse ..." />,
+});
 
-const HowItWorks = dynamic(
-
-  ()=> import("@/components/HowItWorks"),
-  {ssr: true, loading : ()=>  <div className="h-96 animate-pulse ..." />}
-)
+const HowItWorks = dynamic(() => import("@/components/HowItWorks"), {
+  ssr: true,
+  loading: () => <div className="h-96 animate-pulse ..." />,
+});
 const AnalyticsSection = dynamic(
   () => import("@/components/Analytics-section"),
   {
@@ -22,7 +21,7 @@ const AnalyticsSection = dynamic(
     loading: () => (
       <div className="h-96 animate-pulse bg-gray-800/20 rounded-lg" />
     ),
-  }
+  },
 );
 
 const Hero = dynamic(() => import("@/components/Hero"), {
@@ -35,19 +34,19 @@ const ApiSection = dynamic(() => import("@/components/CapquantApi"), {
     <div className="h-96 animate-pulse bg-gray-800/20 rounded-lg" />
   ),
 });
-const Methods = dynamic (()=> import("@/components/methods"),{
-  ssr:true,
-  loading: () => (
-    <div className="h-96 animate-pulse bg-gray-800/20 rounded-lg" />
-  ),
-});
-
-const Contact = dynamic(() => import("@/components/Contact"), {
+const Methods = dynamic(() => import("@/components/methods"), {
   ssr: true,
   loading: () => (
     <div className="h-96 animate-pulse bg-gray-800/20 rounded-lg" />
   ),
 });
+
+// const Contact = dynamic(() => import("@/components/Contact"), {
+//   ssr: true,
+//   loading: () => (
+//     <div className="h-96 animate-pulse bg-gray-800/20 rounded-lg" />
+//   ),
+// });
 
 const Security = dynamic(() => import("@/components/Security"), {
   ssr: true,
@@ -69,7 +68,7 @@ const NoCode = dynamic(() => import("@/components/No-code"), {
     <div className="h-96 animate-pulse bg-gray-800/20 rounded-lg" />
   ),
 });
- const VideoPlayer = dynamic(() => import("@/components/video-player"), {
+const VideoPlayer = dynamic(() => import("@/components/video-player"), {
   ssr: true,
   loading: () => (
     <div className="h-96 animate-pulse bg-gray-800/20 rounded-lg" />
@@ -80,15 +79,15 @@ export default function Home() {
     <div className="font-sans flex flex-col items-center">
       <ScrollUp />
       <Header />
-      <OkSection /> 
+      <OkSection />
       <Hero />
-      <HowItWorks/>  
+      <HowItWorks />
       <AnalyticsSection />
-      <Methods/>
+      <Methods />
       <NoCode />
       <ApiSection />
-      <VideoPlayer/>
-      <Contact />
+      <VideoPlayer />
+      {/* <Contact /> */}
     </div>
   );
 }

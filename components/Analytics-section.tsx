@@ -35,7 +35,8 @@ export default function AnalyticsSection() {
                          font-[555] tracking-[-.0325em] text-balance 
                          max-w-full  sm:max-w-3xl md:max-w-4xl md:text-nowrap  lg:max-w-7xl "
           >
-            Submit multi-asset predictions. <br/>Score live. Collect rewards
+            Submit multi-asset predictions. <br />
+            Score live. Collect rewards
           </MotionH2>
 
           <MotionP
@@ -57,10 +58,9 @@ export default function AnalyticsSection() {
             }}
             className="font-[510] md:px-4 tracking-[-0.011em]   text-[#8a8f98] w-full md:w-4/6  text-sm md:text-xl mt-5"
           >
-            CQ streams live data, you deploy your predictions across any asset
-            and timeframe. <strong>No-code, Low-code, or Pro-code</strong>{" "}
-            strategies go live intraday. Compete for <strong>capital</strong>{" "}
-            and earn rewards
+            You deploy your predictions across any asset and timeframe.{" "}
+            <strong>No-code, Low-code, or Pro-code</strong> strategies go live
+            intraday. Compete for <strong>capital</strong> and earn rewards
           </MotionP>
         </div>
 

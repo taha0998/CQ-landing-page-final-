@@ -41,9 +41,7 @@ export default function Hero() {
           className="text-4xl sm:text-4xl md:text-5xl lg:text-[51.84px] xl:text-[64.8px]  2xl:text-[81px]
         font-[555] tracking-[-.0325em] text-balance text-center"
         >
-          <span className=" underline"> Co-build the algorithm</span>,{" "}
-          <span className=" underline">compete</span>,{" "}
-          <span className=" underline">earn</span>
+          Co-build the algorithm compete earn
         </h1>
       </MotionDiv>
 

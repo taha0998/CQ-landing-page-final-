@@ -29,14 +29,14 @@ export default function Ok() {
             <div className="flex gap-10">
               <span
                 className="block text-[23px] sm:text-5xl md:text-[36px] lg:text-[54px] xl:text-[54px] 2xl:text-[54px] 
-                           leading-[1.1] font-[555] tracking-[-.0325em] text-balance max-w-full underline"
+                           leading-[1.1] font-[555] tracking-[-.0325em] text-balance max-w-full"
               >
                 Deployed.
               </span>
 
               <span
                 className="block text-[23px] sm:text-5xl md:text-[36px] lg:text-[54px] xl:text-[54px] 2xl:text-[54px] 
-                           leading-[1.1] font-[555] tracking-[-.0325em] text-balance max-w-full underline"
+                           leading-[1.1] font-[555] tracking-[-.0325em] text-balance max-w-full"
               >
                 Rewarded.
               </span>

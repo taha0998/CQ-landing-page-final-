@@ -12,7 +12,7 @@ const AnalyticsSection = dynamic(
     loading: () => (
       <div className="h-96 animate-pulse bg-gray-800/20 rounded-lg" />
     ),
-  }
+  },
 );
 
 const Hero = dynamic(() => import("@/components/Hero"), {
@@ -26,12 +26,12 @@ const ApiSection = dynamic(() => import("@/components/CapquantApi"), {
   ),
 });
 
-const Contact = dynamic(() => import("@/components/Contact"), {
-  ssr: false,
-  loading: () => (
-    <div className="h-96 animate-pulse bg-gray-800/20 rounded-lg" />
-  ),
-});
+// const Contact = dynamic(() => import("@/components/Contact"), {
+//   ssr: false,
+//   loading: () => (
+//     <div className="h-96 animate-pulse bg-gray-800/20 rounded-lg" />
+//   ),
+// });
 
 const Security = dynamic(() => import("@/components/Security"), {
   ssr: false,
@@ -64,7 +64,7 @@ const ContainerWrapper = () => {
       <NoCode />
       <LowCode />
       <ApiSection />
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 };

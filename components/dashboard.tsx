@@ -20,6 +20,7 @@ import TimerWrapper from "./Timer-wrapper";
 import { MotionDiv } from "./motion-wrapper";
 import ChartWrapper from "./chart-wrapper";
 import Spicail3dButton from "./Spicail3dButton";
+import clsx from "clsx";
 const Dashboard = () => {
   const allLinks = useMemo(
     () => [
@@ -377,7 +378,13 @@ const Dashboard = () => {
                       transformStyle: "preserve-3d",
                     }}
                     key={i}
-                    className="bg-[#1A1B1C] border   border-[#22262A] rounded-xl p-4 text-white  h-36   transition-all duration-300 "
+                    className={clsx(
+                      "bg-[#1A1B1C] border   border-[#22262A] rounded-xl p-4 h-36   transition-all duration-300",
+                      {
+                        "text-[#C8A97E]": card.title == "Accuracy",
+                        "text-white": card.title != "Accuracy",
+                      },
+                    )}
                   >
                     <h2 className="text-lg font-semibold tracking-[1px]">
                       {card.title == "Live Predictions" ? (

@@ -33,19 +33,13 @@ export default function HowItWorks() {
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
     >
-      <h1
-        className="text-4xl sm:text-4xl md:text-5xl lg:text-[53px] xl:text-[77px]  2xl:text-[81px]
-        font-[555] tracking-[-.0325em] text-balance text-center mb-40"
-      >
-        This isn’t software. It’s a collective brain
-      </h1>
       <div className="max-w-[1200px] mx-auto">
         {/* Top label */}
         <MotionDiv
-          className="flex items-center gap-3 mb-6 text-sm tracking-widest text-[#A1A1AA]"
+          className="flex items-center gap-3 mb-6 text-sm tracking-widest text-[#C8A97E]"
           variants={itemVariants}
         >
-          <span className="w-10 h-[2px] bg-[#5F6163] inline-block"></span>
+          <span className="w-10 h-[2px] bg-[#C8A97E] inline-block"></span>
           HOW IT WORKS
         </MotionDiv>
 
@@ -63,15 +57,11 @@ export default function HowItWorks() {
           {steps.map((step, index) => (
             <MotionDiv
               key={index}
-              className={`p-8 md:p-10 rounded-xl border transition hover:scale-[1.02] ${
-                step.highlight
-                  ? "bg-[#1A1A1A] border-[#5F6163]"
-                  : "bg-[#111] border-neutral-800"
-              }`}
+              className={`p-8 md:p-10 rounded-xl border transition hover:scale-[1.02] bg-[#111] border-neutral-800 hover:bg-[#1A1A1A]  hover:border-[#C8A97E] `}
               variants={itemVariants}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <p className="text-xs tracking-widest text-[#A1A1AA] mb-4 sm:mb-6">
+              <p className="text-xs tracking-widest text-[#C8A97E] mb-4 sm:mb-6">
                 {step.id}
               </p>
 

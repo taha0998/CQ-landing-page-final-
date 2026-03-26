@@ -59,13 +59,15 @@ export default function ContributionMethods() {
               className={`p-10 ${item.number !== "03" ? "border-r border-[#1A1C1F] " : ""}`}
               variants={itemVariants} // <--- animation cascade
             >
-              <div className="flex flex-col justify-between gap-10 ">
+              <div className="flex flex-col justify-between gap-3 ">
                 <div className="flex flex-col gap-4">
-                  <p className="text-4xl text-[#5F6163]">{item.number}</p>
+                  <p className="text-4xl text-[#C8A97E]">{item.number}</p>
                   <h3 className="text-2xl font-semibold">{item.title}</h3>
                 </div>
-                <div className=" md:min-h-[320px] lg:min-h-[220px] xl:min-h-[160px] flex flex-col gap-5 justify-between">
-                  <p className="text-[#A1A1AA] leading-relaxed">{item.text}</p>
+                <div className=" md:min-h-[320px] lg:min-h-[250px] flex flex-col gap-5 justify-between">
+                  <p className="font-[510] tracking-[-0.011em]   text-[#8a8f98] w-full   text-sm md:text-xl mt-5">
+                    {item.text}
+                  </p>
                   <button className="w-46 text-xs tracking-widest border border-[#5F6163] px-4 py-2 text-[#A1A1AA] hover:border-white hover:text-white transition">
                     {item.button}
                   </button>

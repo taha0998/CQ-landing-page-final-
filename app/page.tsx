@@ -41,12 +41,12 @@ const Methods = dynamic(() => import("@/components/methods"), {
   ),
 });
 
-// const Contact = dynamic(() => import("@/components/Contact"), {
-//   ssr: true,
-//   loading: () => (
-//     <div className="h-96 animate-pulse bg-gray-800/20 rounded-lg" />
-//   ),
-// });
+const Contact = dynamic(() => import("@/components/Contact"), {
+  ssr: true,
+  loading: () => (
+    <div className="h-96 animate-pulse bg-gray-800/20 rounded-lg" />
+  ),
+});
 
 const Security = dynamic(() => import("@/components/Security"), {
   ssr: true,
@@ -87,7 +87,7 @@ export default function Home() {
       <NoCode />
       <ApiSection />
       <VideoPlayer />
-      {/* <Contact /> */}
+      <Contact />
     </div>
   );
 }

@@ -270,7 +270,7 @@ export default function Contact() {
                 ref={roleRef}
                 className="bg-[#141516] text-[#9b9b9c] mt-3 py-3 px-4 h-13 outline-none rounded-md w-full border  border-zinc-800 transition-all duration-300  focus:shadow-lg focus:shadow-[#68cc58]/10"
               >
-                <option value="">Role</option>
+                <option value="">Role (required)</option>
                 {roles.map((item) => {
                   return (
                     <option value={item} key={item}>
@@ -286,7 +286,7 @@ export default function Contact() {
                 ref={countryRef}
                 className="bg-[#141516] text-[#9b9b9c] mt-3 py-3 h-13 px-4 outline-none rounded-md w-full border  border-zinc-800 transition-all duration-300  focus:shadow-lg "
               >
-                <option value="">Select a Country</option>
+                <option value="">Select a Country (required)</option>
                 {countries.map((item) => {
                   return (
                     <option value={item} key={item}>

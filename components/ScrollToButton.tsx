@@ -17,10 +17,10 @@ const ScrollTOButton = ({ label }: ScrollToButtonProps) => {
     <button
       onClick={handleScrollToSection}
       className={clsx(
-        "bg-white shadow-lg rounded-[8px] sm:text-[16px]  text-[#08090a] roundedd  sm:h-[32px] px-3 sm:text-xs md:text-sm hover:bg-white  cursor-pointer relative hover:bottom-[2px] ",
+        "bg-white shadow-lg rounded-[8px]  text-[#08090a] roundedd  sm:h-[32px] px-3   hover:bg-white  cursor-pointer relative hover:bottom-[2px] ",
         {
           "size-40 text-[15px] h-[28px]": label === "Join The WaitList",
-          "h-[32px]": label !== "Join The WaitList",
+          "h-[32px] text-[16px]": label !== "Join The WaitList",
         },
       )}
       style={{

@@ -228,7 +228,7 @@ export default function Contact() {
                 required
                 onChange={(e) => setName(e.target.value)}
                 type="text"
-                placeholder="Full name"
+                placeholder="Full name (required)"
                 className="bg-[#141516] mt-3 py-3 px-4 outline-none h-13 rounded-md w-full border border-zinc-800 transition-all duration-300 focus:shadow-lg "
               />
             </MotionDiv>
@@ -239,7 +239,7 @@ export default function Contact() {
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
-                placeholder="Email"
+                placeholder="Email (required)"
                 className="bg-[#141516] mt-3 py-3 px-4 outline-none h-13 rounded-md w-full border border-zinc-800 transition-all duration-300 focus:shadow-lg "
               />
             </MotionDiv>

@@ -32,13 +32,13 @@ export default function Hero() {
         //                max-w-full  sm:max-w-3xl md:max-w-4xl md:text-nowrap  lg:max-w-7xl "
       >
         <h1
-          className="text-4xl sm:text-4xl md:text-5xl lg:text-[81px] xl:text-[81px]  2xl:text-[101.25px]
+          className="text-[34px] sm:text-4xl md:text-4xl lg:text-[81px] xl:text-[81px]  2xl:text-[101.25px]
         font-[555] tracking-[-.0325em] text-balance text-center"
         >
           From idea to markets in 60 minutes.
         </h1>
         <h1
-          className="text-4xl sm:text-4xl md:text-5xl lg:text-[51.84px] xl:text-[64.8px]  2xl:text-[81px]
+          className="text-[34px] sm:text-4xl md:text-5xl lg:text-[51.84px] xl:text-[64.8px]  2xl:text-[81px]
         font-[555] tracking-[-.0325em] text-balance text-center"
         >
           Co-build the algorithm compete earn

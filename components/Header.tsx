@@ -21,7 +21,7 @@ export default function Header() {
   };
   return (
     <div className="flex items-center justify-center md:justify-evenly z-50 w-full sticky left-0 top-0 max-[380px]:gap-5  min-[380px]:max-[740px]:gap-15  lg:gap-120  py-4 border-b border-[#1c1d1d] bg-[#0a0a0a]">
-      <div className="min-w-[130px] relative top-[1.3px]">
+      <div className=" max-w-[125px] lg:min-w-[130px] relative top-[1.3px]">
         <Image
           src={logo}
           alt="logo"

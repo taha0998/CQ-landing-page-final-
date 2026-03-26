@@ -50,7 +50,7 @@ export default function Ok() {
               initial={{ y: 10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ ease: "easeInOut", delay: 0.1 }}
-              className="text-[#8A8F98] text-[16px] sm:text-base md:text-[16px] xl:text-[24px] 2xl:text-[22px] font-[555] leading-relaxed mt-2 max-w-[600px]"
+              className="text-[#8A8F98] text-[16px] sm:text-base md:text-[16px] xl:text-[24px] 2xl:text-[22px] font-[555] leading-relaxed mt-2 max-w-[600px] sm:max-w-[800px]"
             >
               Submit your market predictions, compete on live performance, and
               earn CQXT tokens for every signal that moves the algorithm
